@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="lib/webix/codebase/webix.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8">
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/webix/codebase/webix.js"type="text/javascript" charset="utf-8"></script>
+    <script src="lib/lokijs/build/lokijs.min.js"></script>
+    <script src="lib/localforage/dist/localforage.js"></script>
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.css?v=v1.2.22" type="text/css">
+    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.js?v=v1.2.22"></script>
+    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/three.js?v=v1.2.18"></script>
+    <script src="js/helperobjects.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/mdata.js"></script>
+    <script src="js/uiviewer.js"></script>
+    <script src="js/themes.js"></script>
+    <script src="js/maintenanceui.js"></script>
+    <script src="lib/d3/d3.js"></script>
+    <script src="lib/nvd3-community/build/nv.d3.js"></script>
+    <script>var debugging = true;</script>
+    <title>Plant Virtual Operations</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            height: 100%;
+        }
+
+        .left {
+            flex: 1;
+            height: 100%;
+        }
+
+        .baseflex {
+            height: 100%;
+            flex: 1;
+        }
+
+        .smallw {
+            flex-grow: 1;
+            flex-basis: 20%;
+        }
+
+        .medw {
+            flex-grow: 2;
+            flex-basis: 40%;
+        }
+
+        .bigw {
+            flex-grow: 3;
+            flex-basis: 60%;
+        }
+
+        .gray {
+            background-color: rgb(233,233,233);
+        }
+
+        .wht {
+            background-color: rgb(255,255,255);
+        }
+
+        .smltxt {
+            font-size: 80%;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id='root_div' class="left"></div>
+
+
+    <script type="text/javascript" charset="utf-8">
+
+
+        var setting_headhgt = 38;
+      //  buildResponsiveUI();
+        buildUI();
+        //webix.ready(function () {
+
+        //    app_ui.initializeRegistries().then(function (result) {
+        //        buildUI();
+        //        mv_build_load_menu();
+        //        window.setTimeout(() => {
+        //            resizeViews();
+        //        }, 1000);
+
+        //        var p = getFacilityData();
+        //        p.done(function (result) {
+        //            var o = {};
+        //            if (result && result.hasOwnProperty('views')) {
+        //                app_ui.serverModels = result.views;
+        //                mv_build_load_menu();
+        //            }
+        //        });
+        //    });
+
+
+        //});
+        //    app_ui.initializeRegistries().then(function () {
+        //        var done = function (data) {
+
+          //          app_data = data;
+
+
+
+               //     var doneLoading = function (event, args) {
+                    //    app_data.lists = new AppLists();
+                   //     app_data.refs = getRelatedData();
+                        //   app_data.lists.extract(args.sender);
+                        //   ctrl_H1_header_group_mnu_click("class");
+                 //   }
+
+
+
+              //  }
+
+        //        var p = getFacilityData();
+        //        p.done(done);
+       ////     }).catch(function (e) {
+             //   console.log(e);
+        //    });
+
+
+
+
+    </script>
+
+</body>
+
+</html>
